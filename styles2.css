@@ -1,0 +1,158 @@
+
+
+
+:root {
+    --main-color: hsl(0, 0%, 0%);
+    --main-accent: hsl(180, 13%, 5%);
+    --test-color: #FCF9F6;
+    --body-txt:  SuisseIntl-Regular, Helvetica, sans-serif;
+    --padding-x: clamp(16px, 8vw, calc(100vw - 50%));
+    --btn-padding: 0.5em 3.35em;
+    --body-font-sz: clamp(1em, calc(100vw / 70), 1.5em);
+    --p-width: clamp((100% - 10px), 75%, 70ch);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--body-txt);
+    background-color: var(--test-color);
+}
+
+h1 {
+    font-size: clamp(3em, 8%, 5em);
+    margin: 24px 0;
+}
+
+h5 {
+    font-size: clamp(1.5em, 5vh, 4em);
+    margin-bottom: 24px;
+    color: var(--main-color);
+}
+
+h1,
+h5 {
+    font-family: 'Playfair Display', serif;
+}
+
+a {
+    color: var(--main-color);
+    text-decoration: none;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+p,
+li {
+    font-size: var(--body-font-sz);
+    color: rgb(109, 109, 109);
+}
+
+
+
+
+
+
+
+
+
+.contact-btn {
+    font-family: var(--body-txt, 'sans-serif');
+    font-size: var(--body-font-sz);
+    padding: var(--btn-padding);
+    background-color: var(--main-color);
+    color: var(--test-color);
+    margin: 2.5em auto;
+    border: none;
+    border-radius: 6px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    transition: 300ms ease-out;
+
+    display: block;
+}
+
+.contact-btn a {
+    color: white;
+}
+
+.contact-btn:hover,
+input[type="submit"]:hover {
+    background-color: var(--main-accent);
+    cursor: pointer;
+}
+
+form {
+    max-width: min(100%, 450px);
+    padding: 1.5em;
+    border-radius: 6px;
+    border: 1px solid var(--main-accent);
+    box-shadow: rgba(0, 0, 1, 0.04) 0px 3px 30px,
+        rgba(0, 0, 1, 0.1) 0px 3px 24px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    color: var(--main-color);
+}
+
+label,
+input,
+select {
+    font-family: var(--body-txt);
+    font-size: var(--body-font-sz);
+    margin-bottom: 0.5em;
+}
+
+
+input[type="text"],
+[type="email"],
+[type="tel"],
+[type="password"],
+select {
+    width: 100%;
+    height: 2em;
+    padding: 2px 16px;
+    background-color: #fff;
+    border: 1.5px solid var(--main-accent);
+    border-radius: 6px;
+    outline: none;
+}
+textarea{
+	padding: 1em;
+	font-family: var(--body-txt);
+}
+
+input[type="text"]:focus,
+[type="email"]:focus,
+[type="tel"]:focus,
+[type="password"]:focus {
+    background-color: rgba(109, 109, 109, .03);
+    outline: auto;
+}
+
+form input[type="submit"] {
+    font-size: large;
+    padding: var(--btn-padding);
+    background-color: var(--main-color);
+    color: #fff;
+    margin-top: 40px;
+    border: none;
+    border-radius: 6px;
+
+    align-self: center;
+}
+
+

@@ -1,0 +1,44 @@
+.form-title {
+        text-align: center;
+        /* margin-top: -10vh; */
+        font-family: SuisseIntl-Light, Helvetica, sans-serif;
+}
+/* main {
+    margin-top: 10vh;
+} */
+
+
+nav {
+    position:relative !important;
+}
+
+
+#registration-form {
+    margin: 100px auto;
+    display: flex;
+    border: 1px solid var(--main-color);
+}
+
+#registration-form fieldset {
+    border: none;
+
+}
+
+#registration-form label {
+    display: block;
+}
+
+#registration-form a {
+    text-decoration: underline;
+    margin: 1.5em auto 0;
+}
+
+@media screen and (min-width: 1024px) {
+
+    #registration-form fieldset {
+        display: flex;
+        gap: 1.5em;
+        align-items: center;
+    }
+
+}

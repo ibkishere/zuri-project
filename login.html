@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="z" content="width=device-width, initial-scale=1.0">
+    <link href="./css/styles.css" rel="stylesheet"  type="text/css" >
+    <link  href="./css/styles2.css"  rel="stylesheet"  type="text/css">
+    <link  href="./css/login.css" rel="stylesheet"  type="text/css" >
+    <title>Document</title>
+</head>
+
+<body>
+    <nav class="nav">
+        <div class="nav--wrapper">
+            <div class="nav--logo">
+                <p class="nav--logo"><a href ="index.html">About</a></p>
+            </div>
+            <ul class="nav--link hover-effect">
+                <li class="nav--link-item"><a href = "./registration.html">Registration</a></li>
+                <li class="nav--link-item"><a href="./login.html">Login</a></li>
+                <li class="nav--link-item"><a href = "./contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+  
+    <main>
+
+        <h1>Welcome back</h1>
+
+
+        <form id="login-form" action="#">
+
+            <label for="email">Your email</label>
+            <input id="email" type="email" placeholder="something@gmail.com" required="">
+            <label for="password">Password</label>
+            <input id="password" type="password" required="">
+            <div class="login-extra">
+                <div>
+                    <label for="recall">Remember me</label>
+                    <input type="checkbox" name="recall" id="recall">
+                </div>
+                <a href="#">forgot password?</a>
+            </div>
+
+            <input type="submit" value="sign in">
+					<a href="registration.html" class="signup-link">Not a member?</a>
+        </form>
+			
+    </main>
+
+
+</body>
+
+</html>
